@@ -114,16 +114,11 @@ Settings:
 - **Impulse Response:** Dolby-derived speaker IR (short EQ-type IR)
 - **IR Length:** ≤ 5 ms
 - **Stereo width:** 100 %
-- **Autogain:** Disabled
+- **Autogain:** Disabled (preserve balance of the IR)
 - **Input Gain:** 0.0 dB
 - **Wet:** 0 dB
 - **Dry:** -inf
 - **Output Gain:** −1.0 to −2.0 dB (manual trim for headroom)
-
-Notes:
-- Autogain is disabled to preserve the intended spectral balance of the IR
-- Gain staging is handled downstream by dynamics and limiter
-
 ---
 
 ### 2. Bass Enhancer (Calf Studio Gear)
@@ -158,8 +153,8 @@ General Settings:
 | Band | Frequency Range | Attack Threshold | Ratio | Attack Time | Release Time | Relase Threshold | Makeup | Knee  |
 | ---- | --------------- | ---------------- | ----- | ----------- | ------------ | ---------------- | ------ | ----- |
 | Low  | 0–180 Hz        | −24 dB           | 2.5:1 | 20 ms       | 160 ms       | -inf             | +2 dB  | -9 dB |
-| Mid  | 180 Hz–3.5 kHz  | −30 dB           | 1.2:1 | 10 ms       | 120 ms       |                  | 0 dB   | -6 dB |
-| High | 3.5–inf kHz     | −26 dB           | 1.6:1 | 3 ms        | 90 ms        |                  | −1 dB  | -6 dB |
+| Mid  | 180 Hz–3.5 kHz  | −30 dB           | 1.2:1 | 10 ms       | 120 ms       |  -inf               | 0 dB   | -6 dB |
+| High | 3.5–inf kHz     | −26 dB           | 1.6:1 | 3 ms        | 90 ms        | -inf                | −1 dB  | -6 dB |
 
 Notes: In easy effects, using linux studio plugins, you can only set the start (the lower bound of the band). So for the first band there is no start, the second should be 180 Hz and the third 3.5 kHz.
 
