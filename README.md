@@ -129,9 +129,9 @@ Purpose:
 - Keep subtle; audible distortion indicates excessive settings
 
 Settings:
-- **Amount:** +1.5 dB (adjust ±0.5 dB by ear)
-- **Harmonics:** 4.0 (should stay relatively low to keep the bass sounding natural)
-- **Scope:** 100 Hz
+- **Amount:** +3.5 dB (adjust by ear, if it distorts the sound, it's too high)
+- **Harmonics:** 8.0 (can make the bass sound synthetic if pushed too high)
+- **Scope:** 250 Hz (Frequency where the effect stops)
 - **Blend Harmonics:** ~70% toward 2nd harmonic
 - **Floor Active:** Disabled (sets a minimum frequency, not needed for laptop speakers)
 ---
